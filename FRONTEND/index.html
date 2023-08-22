@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>NODE JS CRUD OPERATION</title>
 </head>
-<body>
-    <h1 class="text-danger animate__animated animate__backInRight">NODE JS CRUD OPERATION</h1>
-    <i class="fa fa-sad-cry"></i>
 
+<body>
+    <div class="container">
+        <h1 class="text-center fw-bold p-4 text-danger animate__animated animate__backInRight">NODE JS CRUD
+            OPERATION</h1>
+        <div class="row">
+            <div class="col-md-12 bg-white shadow-lg p-4">
+                <div class="d-flex justify-content-between align-items-center bg-primary-subtle p-2 rounded shadow">
+                    <div>
+                        <h1 class="fw-bold text-decoration-underline">@JUST FOR CODE</h1>
+                    </div>
+                    <div>
+                        <button class="btn btn-light p-0 m-0">
+                            <input type="search" placeholder="Search..." class="form-control">
+                        </button>
+                        <button class="btn btn-danger fw-bold">
+                            <i class="fa fa-minus"></i> Delete All
+                        </button>
+                        <button class="btn btn-success fw-bold">
+                            <i class="fa fa-plus"></i> Add New User
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th class="text-nowrap fw-bold">Sr</th>
+                                    <th class="text-nowrap fw-bold">Profile</th>
+                                    <th class="text-nowrap fw-bold">Name</th>
+                                    <th class="text-nowrap fw-bold">Email</th>
+                                    <th class="text-nowrap fw-bold">DOB</th>
+                                    <th class="text-nowrap fw-bold">Mobile</th>
+                                    <th class="text-nowrap fw-bold">Password</th>
+                                    <th class="text-nowrap fw-bold">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-nowrap">1</td>
+                                    <td class="text-nowrap">
+                                        <img src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg"
+                                            alt="profile-pic" width="30">
+                                    </td>
+                                    <td class="text-nowrap"></td>
+                                    <td class="text-nowrap"></td>
+                                    <td class="text-nowrap"></td>
+                                    <td class="text-nowrap"></td>
+                                    <td class="text-nowrap"></td>
+                                    <td class="text-nowrap">
+                                        <button class="btn btn-primary">
+                                            <i class="fa fa-edit"></i>
+                                        </button>
+                                        <button class="btn btn-danger">
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- JS FILE LINK -->
     <script src="./js/index.js"></script>
 </body>
+
 </html>
